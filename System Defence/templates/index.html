@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Drive Antivirus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🛡️ Secure Drive Antivirus</h1>
+        <p>Protect your system with real-time scanning, file checks, and malware removal tools.</p>
+    </section>
+
+    <!-- Feature Buttons -->
+    <section class="features">
+        <div class="feature-card visible">
+            <h5>🖥️ Full System Scan</h5>
+            <p>Scan your entire computer for threats.</p>
+            <a href="/run_full_scan" class="btn-cta">Run Full Scan</a>
+        </div>
+        <div class="feature-card visible">
+            <h5>📁 Scan a File</h5>
+            <p>Select and scan any file for malware.</p>
+            <a href="/scan_file" class="btn-cta">Scan File</a>
+        </div>
+        <div class="feature-card visible">
+            <h5>🟢 Real-Time Protection</h5>
+            <p>Monitor threats as they appear in real time.</p>
+            <a href="/start_real_time_scan" class="btn-cta">Enable Real-Time Scan</a>
+        </div>
+        <div class="feature-card visible">
+            <h5>📂 Quarantine</h5>
+            <p>Review and restore quarantined files.</p>
+            <a href="/open_quarantine" class="btn-cta">Open Quarantine</a>
+        </div>
+        <!-- <div class="feature-card visible">
+            <h5>🛠️ Update Signatures</h5>
+            <p>Stay protected with the latest virus definitions.</p>
+            <a href="{{ url_for('update_page') }}" class="btn-cta">Update Signatures</a>
+        </div>
+        <div class="feature-card visible">
+            <h5>❌ Close Antivirus</h5>
+            <p>Exit the application safely.</p>
+            <a href="/close" class="btn-cta">Close Antivirus</a>
+        </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        &copy; 2025 Secure Drive Antivirus. All rights reserved.
+    </footer>
+
+</body>
+</html>

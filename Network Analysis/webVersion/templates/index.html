@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SecureNet Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" href="/">Network Security Analyzer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/capture">Packet Capture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/live-hosts">Live Host Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000/scanning">Full System Scan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000/scan_file">Scan A File</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000/realtime">Real Time Protection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000/open_quarantine">Quarantine</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000/update">Update Signature</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Network Security Analyzer</h1>
+    <p>Analyze, Detect, and Protect with Advanced Network Threat Monitoring.</p>
+    <a href="#features" class="btn btn-cta">Start Scanning</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h5>🛡️ Packet Capture and Analysis</h5>
+      <p>Analyse network behavior, diagnose issues, and spot anomalies and detect network security issues and potential threats.</p>
+      <a href="/capture" class="btn btn-primary">Analyse Now</a>
+    </div>
+    <div class="feature-card">
+      <h5>📊 Live Host Detection</h5>
+      <p>Maps the live hosts, displays their IP and MAC addresses, along with vendor information.</p>
+      <a href="/live-hosts" class="btn btn-primary">View Hosts</a>
+    </div>
+    <div class="feature-card">
+      <h5>🗄️ Full System Scan</h5>
+      <p>Monitors files in real-time, detects newly created or modified files and scanning them for malware.</p>
+      <a href="http://127.0.0.1:5000/scanning" class="btn btn-primary">Scan Now</a>
+    </div>
+    <div class="feature-card">
+      <h5>📂Scan A File</h5>
+      <p>Scans the uploaded file and checks for potential threats.</p>
+      <a href="http://127.0.0.1:5000/scan_file" class="btn btn-primary">Scan Now</a>
+    </div>
+    <div class="feature-card">
+      <h5>⏳Real Time Protection</h5>
+      <p>Monitors network traffic in real-time, blocking potential threats before they can cause harm.</p>
+      <a href="http://127.0.0.1:5000/realtime" class="btn btn-primary">Protect Now</a>
+    </div>
+    <div class="feature-card">
+      <h5>🗃️ Quarantine Files</h5>
+      <p>Isolates suspicious files to prevent them from causing harm.</p>
+      <a href="http://127.0.0.1:5000/open_quarantine" class="btn btn-primary">Open Quarantine</a>
+    </div>
+    <!-- <div class="feature-card">
+      <h5>⬆️Update Signature</h5>
+      <p>Ensures the latest threat definitions are applied for maximum protection.</p>
+      <a href="http://127.0.0.1:5000/update" class="btn btn-primary">Update Now</a>
+    </div> -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container text-center">
+      <p>&copy; 2025 <strong>Network Security Analyzer</strong> | Empowering Secure Digital Networks 🔒</p>
+      <p>Developed for <strong>Cybersecurity & Threat Intelligence</strong></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const nav = document.querySelector('.navbar');
+      const featureCards = document.querySelectorAll('.feature-card');
+      let lastScrollY = window.scrollY;
+
+      function handleScroll() {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          nav.style.top = '-80px';
+        } else {
+          nav.style.top = '0';
+        }
+        lastScrollY = currentScrollY;
+
+        const triggerBottom = window.innerHeight * 0.85;
+        featureCards.forEach(card => {
+          const cardTop = card.getBoundingClientRect().top;
+          if (cardTop < triggerBottom) {
+            card.classList.add('visible');
+          } else {
+            card.classList.remove('visible');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', () => {
+        window.requestAnimationFrame(handleScroll);
+      });
+
+      handleScroll();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+🛡️ Update Log Initiated
+🚀 Starting antivirus signatures update...
+⬇️ Downloading MD5 files...
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_1.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_2.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_3.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_4.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_5.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_6.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_7.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_8.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_9.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\md5_hashes_10.txt
+❌ Not found: https://raw.githubusercontent.com/aaryanrlondhe/Malware-Hash-Database/main/MD5/md5_hashes_11.txt
+⬇️ Downloading SHA1 files...
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_1.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_2.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_3.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_4.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_5.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha1_hashes_6.txt
+❌ Not found: https://raw.githubusercontent.com/aaryanrlondhe/Malware-Hash-Database/main/SHA1/sha1_hashes_7.txt
+⬇️ Downloading SHA256 files...
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_1.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_2.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_3.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_4.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_5.txt
+ℹ️ Already exists: D:\6th Sem\CNS\LAB\Antivirus\Secure-Drive-Antivirus\Malware Hash Database\sha256_hashes_6.txt
+❌ Not found: https://raw.githubusercontent.com/aaryanrlondhe/Malware-Hash-Database/main/SHA256/sha256_hashes_7.txt
+♻️ Removed old antivirus signatures database.
+✅ Inserted 3481385 hashes into MD5 table.
+✅ Inserted 795525 hashes into SHA1 table.
+✅ Inserted 795777 hashes into SHA256 table.
+✅ Antivirus Signatures updated successfully!

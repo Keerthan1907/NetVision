@@ -1,0 +1,10 @@
+Ether / ARP who has 172.17.0.211 says 172.17.8.156 / Padding
+Ether / ARP who has 172.17.5.38 says 172.17.15.254 / Padding
+Ether / ARP who has 172.16.71.254 says 172.16.65.92 / Padding
+cc:88:c7:c9:3d:2e > ff:ff:ff:ff:ff:ff (0x8ffd) / Raw
+cc:88:c7:c9:3d:2e > ff:ff:ff:ff:ff:ff (0x8ffd) / Raw
+cc:88:c7:c9:3d:2e > ff:ff:ff:ff:ff:ff (0x8ffd) / Raw
+cc:88:c7:c9:1b:1a > ff:ff:ff:ff:ff:ff (0x8ffd) / Raw
+Ether / IPv6 / UDP / mDNS Ans b'Android.local.'
+Ether / IP / UDP / mDNS Ans b'Android.local.'
+Ether / fe80::d64e:2546:b63e:c5d > ff02::c (0) / IPv6ExtHdrHopByHop / ICMPv6MLReport
